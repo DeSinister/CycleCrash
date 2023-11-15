@@ -21,16 +21,27 @@ The `unsafe` folder contains the first 1000 videos from `Final.csv` that exhibit
 The `safe` folder includes the remaining 2000 videos from `Final.csv` that are labeled as safe cycling interactions. These videos are considered to depict cycling situations that are safe and do not involve any potential hazards.
 
 dataset/
+
 |-- unsafe/
+
 | |-- video1.mp4
+
 | |-- video2.mp4
+
 | |-- ...
+
 | |-- video1000.mp4
+
 |
+
 |-- safe/
+
 | |-- video1001.mp4
+
 | |-- video1002.mp4
+
 | |-- ...
+
 | |-- video3000.mp4
 
 

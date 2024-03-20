@@ -1,0 +1,16 @@
+
+dropout_cfg: 0.05 # Dropout probability
+factor: 3 # Attention Factor
+d_layers: 1 # Number of Decoder Layers
+e_layers: 2 # Number of Encoder Layers
+n_heads: 8 # Number of Attention Heads
+d_ff: 2048 # dimension of fcn
+p_hidden_dims: [128, 128] # List composed of hidden dimensions for the Projector
+p_hidden_layers: 2 # Number of Layers for the Projector
+activation: 'gelu' # Activation Function
+output_spatial_dim:
+  convnext_tiny: 768
+  convnext: 1024
+  convnext_last: 1000
+  resnet18: 512
+  resnet18_last: 1000

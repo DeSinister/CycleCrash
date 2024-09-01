@@ -45,11 +45,11 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
 <table>
   <thead>
     <tr>
-      <th rowspan="2">Method</th>
+      <th rowspan="3">Method</th>
       <th colspan="2">Risk</th>
       <th colspan="2">Right-of-way</th>
       <th colspan="2">Collision</th>
-      <th rowspan="2">Time-to-coll. MSE</th>
+      <th colspan="2">Time-to-coll.</th>
       <th colspan="2">Severity</th>
       <th colspan="2">Fault</th>
       <th colspan="2">Age</th>
@@ -63,6 +63,8 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <th>F1 &uarr;</th>
       <th>Acc. &uarr;</th>
       <th>F1 &uarr;</th>
+      <th>MSE &darr;</th>
+      <th></th>
       <th>Acc. &uarr;</th>
       <th>F1 &uarr;</th>
       <th>Acc. &uarr;</th>
@@ -85,6 +87,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td><i>66.45</i></td>
       <td>69.69</td>
       <td>1.41</td>
+      <td></td>
       <td>36.49</td>
       <td>23.01</td>
       <td>59.65</td>
@@ -105,6 +108,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td>57.01</td>
       <td><i>69.92</i></td>
       <td><b>1.33</b></td>
+      <td></td>
       <td>47.51</td>
       <td>24.47</td>
       <td>53.37</td>
@@ -125,6 +129,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td>63.10</td>
       <td>60.24</td>
       <td><i>1.38</i></td>
+      <td></td>
       <td>56.60</td>
       <td>26.12</td>
       <td>59.37</td>
@@ -145,6 +150,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td><b>67.71</b></td>
       <td>63.33</td>
       <td>1.43</td>
+      <td></td>
       <td><i>56.63</i></td>
       <td>25.46</td>
       <td>50.53</td>
@@ -165,6 +171,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td>63.72</td>
       <td>61.08</td>
       <td>1.44</td>
+      <td></td>
       <td>54.45</td>
       <td>24.70</td>
       <td>52.16</td>
@@ -185,6 +192,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td>61.49</td>
       <td>61.13</td>
       <td>1.47</td>
+      <td></td>
       <td>51.80</td>
       <td>24.09</td>
       <td><i>60.47</i></td>
@@ -205,6 +213,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td>60.59</td>
       <td>60.73</td>
       <td>1.47</td>
+      <td></td>
       <td>51.39</td>
       <td>23.77</td>
       <td>56.10</td>
@@ -225,6 +234,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td>63.50</td>
       <td>65.06</td>
       <td>1.56</td>
+      <td></td>
       <td>53.80</td>
       <td><i>26.54</i></td>
       <td>56.74</td>
@@ -232,7 +242,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td><i>94.55</i></td>
       <td><i>66.78</i></td>
       <td>46.46</td>
-      <td><b>32.62</b></td>
+      <td><b>32.62</td>
       <td>42.85</td>
       <td>25.16</td>
     </tr>
@@ -245,6 +255,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td>60.79</td>
       <td>62.28</td>
       <td>1.39</td>
+      <td></td>
       <td>53.88</td>
       <td>24.67</td>
       <td>57.17</td>
@@ -265,6 +276,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <td>64.84</td>
       <td><b>70.84</b></td>
       <td><i>1.38</i></td>
+      <td></td>
       <td><b>59.66</b></td>
       <td><b>31.78</b></td>
       <td><b>65.16</b></td>
@@ -278,6 +290,8 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
     </tr>
   </tbody>
 </table>
+
+
 
 <p><i>Combined experimental results for tasks 1 through 9. The methods above the line are baselines based on prior works, while those below the line are VidNeXt and its <b>ablation</b> variants.</i></p>
 

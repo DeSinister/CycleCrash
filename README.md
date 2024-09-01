@@ -1,6 +1,4 @@
-</h1>CycleCrash: A Dataset of Bicycle Collision Videos for Collision
-Prediction and Analysis
-</h1>
+</h1 align="center">CycleCrash: A Dataset of Bicycle Collision Videos for Collision Prediction and Analysis</h1>
 
 <h3 align="center">
 This paper has been accepted to WACV 2025

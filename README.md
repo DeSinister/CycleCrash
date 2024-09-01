@@ -19,6 +19,8 @@ This paper has been accepted to WACV 2025
 </h3>
 
 
+<p align="center"><img width="100%" src="assets/Graphical_abstract.pdf"/></p>
+
 ## Overview
 Self-driving research often underrepresents cyclist collisions and safety. To address this, we present CycleCrash, a novel dataset consisting of 3,000 dashcam videos with 436,347 frames that capture cyclists in a range of critical situations, from collisions to safe interactions. This dataset enables 9 different cyclist collision prediction and classification tasks focusing on potentially hazardous conditions for cyclists and is annotated with collision-related, cyclist-related, and scene-related labels. Next, we present
 VidNeXt, a novel method that uses a non-stationary transformer on the defined tasks within our dataset. To demonstrate the effectiveness of our method and create additional baselines on CycleCrash, we apply and compare 7 models along with a detailed ablation. 

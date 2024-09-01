@@ -1,4 +1,4 @@
-CycleCrash: A Dataset of Bicycle Collision Videos for Collision
+</h1>CycleCrash: A Dataset of Bicycle Collision Videos for Collision
 Prediction and Analysis
 </h1>
 

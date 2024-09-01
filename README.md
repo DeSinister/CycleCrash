@@ -1,8 +1,29 @@
-# CycleCrash
+CycleCrash: A Dataset of Bicycle Collision Videos for Collision
+Prediction and Analysis
+</h1>
+
+<h3 align="center">
+This paper has been accepted to WACV 2025
+</h3>
+
+<h3 align="center">
+<a href="https://www.pritamsarkar.com">Nishq Poorav Desai</a>
+&nbsp; <a href="">Ali Etemad</a>
+&nbsp; <a href="">Michael Greenspan</a>
+</h3>
+
+<h3 align="center"> 
+<a href="#">[Paper]</a>   <!-- change with aaai link -->
+<a href="#"> [Appendix]</a> 
+<a href="#"> [ArXiv]</a> 
+<!-- <a href="https://github.com/pritamqu/AVCAffe"> [Code]</a>   -->
+<a href="[https://github.com/DeSinister/CycleCrash/]"> [Website]</a>
+</h3>
 
 
 ## Overview
-Recent developments in computer vision have notably featured extensive labelled datasets of urban environments, primarily focused on advancing self-driving cars. In contrast, datasets do not specifically consider cyclist collisions and safety. To address this, we introduce CycleCrash, a novel dataset comprising 3,000 dashcam video clips, totaling 436,347 frames that capture cyclists in diverse real-world scenarios, including both accident and non-accident clips. This dataset targets potentially hazardous conditions for cyclists and is annotated with collision-related, cyclist-related, and scene-related labels. Furthermore, we present VidNeXt, a novel method that adapts a non-stationary transformer structure originally proposed for forecasting multivariate time series data, toward problems of classification and regression of video within our dataset. We’ve also applied and compared 7 additional baseline models and detailed ablation for our method on 9 cyclist collision prediction and classification tasks.
+Self-driving research often underrepresents cyclist collisions and safety. To address this, we present CycleCrash, a novel dataset consisting of 3,000 dashcam videos with 436,347 frames that capture cyclists in a range of critical situations, from collisions to safe interactions. This dataset enables 9 different cyclist collision prediction and classification tasks focusing on potentially hazardous conditions for cyclists and is annotated with collision-related, cyclist-related, and scene-related labels. Next, we present
+VidNeXt, a novel method that uses a non-stationary transformer on the defined tasks within our dataset. To demonstrate the effectiveness of our method and create additional baselines on CycleCrash, we apply and compare 7 models along with a detailed ablation. 
 
 ## Files
 - **Final.csv**: CSV file containing the CycleCrash dataset.
@@ -18,8 +39,16 @@ Recent developments in computer vision have notably featured extensive labelled 
 - Run the `main.py` file, with the required parameters in arguments for training. 
 
 
-Please refer to the `Final.csv` file for detailed annotations and additional information about each video in the dataset.
+Please refer to the `dataset.csv` file for detailed annotations and additional information about each video in the dataset.
 
 
-
-This repository is submitted for review in a double-blinded conference. Specific details, including licensing information, have been intentionally omitted to preserve anonymity.
+### Citation
+If you find this repository useful, please consider giving a star :star: and citing the paper:
+```
+@inproceedings{desai2025cyclecrash,
+  title={CycleCrash: A Dataset of Bicycle Collision Videos for Collision Prediction and Analysis},
+  author={Desai, Nishq Poorav and Etemad, Ali and Greenspan, Michael},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  year={2025}
+}
+```

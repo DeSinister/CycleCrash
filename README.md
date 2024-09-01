@@ -49,7 +49,7 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <th colspan="2">Risk</th>
       <th colspan="2">Right-of-way</th>
       <th colspan="2">Collision</th>
-      <th colspan="2">Time-to-coll.</th>
+      <th colspan="1">Time-to-coll.</th>
       <th colspan="2">Severity</th>
       <th colspan="2">Fault</th>
       <th colspan="2">Age</th>
@@ -64,7 +64,6 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
       <th>Acc. &uarr;</th>
       <th>F1 &uarr;</th>
       <th>MSE &darr;</th>
-      <th></th>
       <th>Acc. &uarr;</th>
       <th>F1 &uarr;</th>
       <th>Acc. &uarr;</th>

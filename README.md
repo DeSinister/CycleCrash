@@ -322,3 +322,14 @@ If you find this repository useful, please consider giving a star :star: and cit
   year={2025}
 }
 ```
+
+
+### Acknowledgements
+
+This project includes code borrowed from the following repositories:
+
+- [ViViT](https://github.com/google-research/vision_transformer) by Google Research.
+- [Non-stationary Trasnformer]((https://github.com/thuml/Nonstationary_Transformers)).
+- [ConvNeXt]([https://github.com/google-research/vision_transformer](https://github.com/facebookresearch/ConvNeXt)) by Facebook Research.
+- [TimeSformer](https://github.com/facebookresearch/TimeSformer) by Facebook Research.
+- [3D ResNet, R(2+1)D, X3D]((https://github.com/facebookresearch/pytorchvideo)) by Facebook Research.

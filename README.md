@@ -44,25 +44,25 @@ Please refer to the `dataset.csv` file for detailed annotations and additional i
    - Place the `yt-dlp.exe` in the `bin` directory of the FFmpeg folder, e.g., `C:\ffmpeg-6.0-full_build\ffmpeg-6.0-full_build\bin`.
 
 3. **Downloading the dataset**
-   - Set the paths for the dataset.csv, output folder, and path of the folder containing yt-dlp.exe in download_dataset.py.
+   - Set the paths for the dataset.csv, output folder, and folder path containing yt-dlp.exe in download_dataset.py.
    - Run the python file download.py to collect the videos.
    ```    
-   python download/download_dataset.csv
+   python download/download_dataset.py
    ```
 
 4. **Preprocessing the videos**
-   - Set the paths for the dataset.csv, directory where videos are stored, and the output directory in pre_process.py
+   - Set the paths for the dataset.csv, the directory where videos are stored, and the output directory in pre_process.py
    - Run the preprocess.py file.
    ```    
-   python download/preprocess.csv
+   python download/preprocess.py
    ```
 
 
 
 ## Training VidNeXt
-- Run src/main.py with required hyperparameter setting in arguments.
+- Run src/main.py with the required hyperparameter setting in arguments.
 ```    
-python src/main.py -vid_dir PATH_TO_PREPROCESSED_VIDEOS -csv_file PATH_TO_ANNOTATIONS -task TASK_TYPE -f 10 -o PATH_TO_SAVE_FRAMES -n NUM_OF_PROCESSES
+python src/main.py -vid_dir PATH_TO_PREPROCESSED_VIDEOS -csv_file PATH_TO_DATASET_CSV -task TASK_TYPE 
 ```
 
 

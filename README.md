@@ -309,7 +309,7 @@ python src/main.py -vid_dir PATH_TO_PREPROCESSED_VIDEOS -csv_file PATH_TO_DATASE
 
 
 
-<p><i>Combined experimental results for tasks 1 through 9. The methods above the line are baselines based on prior works, while those below the line are VidNeXt and its <b>ablation</b> variants.</i></p>
+<p><i>Combined experimental results for tasks 1 through 9. The methods include the 7 baselines based on prior works, 2 <b>ablation</b> variants, and VidNeXt.</i></p>
 
 
 ### Citation

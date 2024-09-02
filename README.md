@@ -5,16 +5,16 @@ This paper has been accepted to WACV 2025
 </h3>
 
 <h3 align="center">
-<a href="#">Nishq Poorav Desai</a>
-&nbsp; <a href="">Ali Etemad</a>
-&nbsp; <a href="">Michael Greenspan</a>
+<a href="https://scholar.google.com/citations?user=m2uTpYIAAAAJ&hl=en">Nishq Poorav Desai</a>
+&nbsp; <a href="https://scholar.google.ca/citations?user=UvOC8MkAAAAJ&hl=en">Ali Etemad</a>
+&nbsp; <a href="https://scholar.google.ca/citations?user=x-M8l7IAAAAJ&hl=en">Michael Greenspan</a>
 </h3>
 
 <h3 align="center"> 
 <a href="#">[Paper]</a>   <!-- change with aaai link -->
 <a href="#"> [Appendix]</a> 
 <a href="#"> [ArXiv]</a> 
-<a href="[https://github.com/DeSinister/CycleCrash/]"> [Website]</a>
+<a href="https://github.com/DeSinister/CycleCrash/"> [Website]</a>
 </h3>
 
 
@@ -313,7 +313,7 @@ python src/main.py -vid_dir PATH_TO_PREPROCESSED_VIDEOS -csv_file PATH_TO_DATASE
 
 
 ### Citation
-If you find this repository useful, please consider giving a star :star: and citing the paper:
+If you find this repository useful, please consider giving it a star :star: and citing the paper:
 ```
 @inproceedings{desai2025cyclecrash,
   title={CycleCrash: A Dataset of Bicycle Collision Videos for Collision Prediction and Analysis},
@@ -329,7 +329,7 @@ If you find this repository useful, please consider giving a star :star: and cit
 This project includes code borrowed from the following repositories:
 
 - [ViViT](https://github.com/google-research/vision_transformer) by Google Research.
-- [Non-stationary Trasnformer]((https://github.com/thuml/Nonstationary_Transformers)).
-- [ConvNeXt]([https://github.com/google-research/vision_transformer](https://github.com/facebookresearch/ConvNeXt)) by Facebook Research.
+- [Non-stationary Trasnformer](https://github.com/thuml/Nonstationary_Transformers).
+- [ConvNeXt](https://github.com/facebookresearch/ConvNeXt) by Facebook Research.
 - [TimeSformer](https://github.com/facebookresearch/TimeSformer) by Facebook Research.
-- [3D ResNet, R(2+1)D, X3D]((https://github.com/facebookresearch/pytorchvideo)) by Facebook Research.
+- [3D ResNet, R(2+1)D, X3D](https://github.com/facebookresearch/pytorchvideo) by Facebook Research.

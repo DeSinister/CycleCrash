@@ -27,9 +27,9 @@ VidNeXt, a novel method that uses a non-stationary transformer on the defined ta
 Please refer to the `dataset.csv` file for detailed annotations and additional information about each video in the dataset.
 
 ## Files
-- **Final.csv**: CSV file containing the CycleCrash dataset.
-- **splitter.py**: Python script to split the dataset in training and validation split.
-- **pre_processing.py**: Python script to Pre-process videos for background cropping and uniform temporal and spatial dimensions.
+- **dataset.csv**: CSV file containing the CycleCrash dataset.
+- **download.py**: Python script to download the videos of the dataset.
+- **preprocess.py**: Python script to Pre-process videos for background cropping and uniform temporal and spatial dimensions.
 - **data_loader.py**: Python script for implementing PyTorch-based Data loader for CycleCrash dataset
 - **get_model.py**: Python script to load the baseline models, the proposed VidNeXt and its ablation variants.
 

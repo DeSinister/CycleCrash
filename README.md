@@ -24,6 +24,8 @@ This paper has been accepted to WACV 2025
 Self-driving research often underrepresents cyclist collisions and safety. To address this, we present CycleCrash, a novel dataset consisting of 3,000 dashcam videos with 436,347 frames that capture cyclists in a range of critical situations, from collisions to safe interactions. This dataset enables 9 different cyclist collision prediction and classification tasks focusing on potentially hazardous conditions for cyclists and is annotated with collision-related, cyclist-related, and scene-related labels. Next, we present
 VidNeXt, a novel method that uses a non-stationary transformer on the defined tasks within our dataset. To demonstrate the effectiveness of our method and create additional baselines on CycleCrash, we apply and compare 7 models along with a detailed ablation. 
 
+Please refer to the `dataset.csv` file for detailed annotations and additional information about each video in the dataset.
+
 ## Files
 - **Final.csv**: CSV file containing the CycleCrash dataset.
 - **splitter.py**: Python script to split the dataset in training and validation split.
@@ -31,14 +33,39 @@ VidNeXt, a novel method that uses a non-stationary transformer on the defined ta
 - **data_loader.py**: Python script for implementing PyTorch-based Data loader for CycleCrash dataset
 - **get_model.py**: Python script to load the baseline models, the proposed VidNeXt and its ablation variants.
 
-## Directions
-- Prepare the videos, and save them as used in the {File Name}_{Counter}.mp4 as shown in Final.csv.
-- Run the `pre_processing.py` file, to preprocess the videos.
-- Run the `splitter.py` file, to provide the necessary split CSV files for the training and testing set.
-- Run the `main.py` file, with the required parameters in arguments for training. 
+## Preparing the dataset
+
+1. **FFmpeg**:
+   - Download the full build of FFmpeg from [FFmpeg Releases](https://ffmpeg.org/download.html).
+   - Extract the downloaded ZIP file to a location on your system, e.g., `C:\ffmpeg-6.0-full_build`.
+
+2. **yt-dlp**:
+   - Download `yt-dlp` from the [yt-dlp GitHub repository](https://github.com/yt-dlp/yt-dlp#installation).
+   - Place the `yt-dlp.exe` in the `bin` directory of the FFmpeg folder, e.g., `C:\ffmpeg-6.0-full_build\ffmpeg-6.0-full_build\bin`.
+
+3. **Downloading the dataset**
+   - Set the paths for the dataset.csv, output folder, and path of the folder containing yt-dlp.exe in download_dataset.py.
+   - Run the python file download.py to collect the videos.
+   ```    
+   python download/download_dataset.csv
+   ```
+
+4. **Preprocessing the videos**
+   - Set the paths for the dataset.csv, directory where videos are stored, and the output directory in pre_process.py
+   - Run the preprocess.py file.
+   ```    
+   python download/preprocess.csv
+   ```
 
 
-Please refer to the `dataset.csv` file for detailed annotations and additional information about each video in the dataset.
+
+## Training VidNeXt
+- Run src/main.py with required hyperparameter setting in arguments.
+```    
+python src/main.py -vid_dir PATH_TO_PREPROCESSED_VIDEOS -csv_file PATH_TO_ANNOTATIONS -task TASK_TYPE -f 10 -o PATH_TO_SAVE_FRAMES -n NUM_OF_PROCESSES
+```
+
+
 
 ## Results
 

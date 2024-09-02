@@ -39,8 +39,7 @@ if __name__ == "__main__":
     parser.add_argument('-model', '--model_type', type=str, default='VidNeXt', help="Type of the model: ['slow_r50', 'r2plus1d_r50', 'x3d_xs', 'x3d_s', 'x3d_m', 'TimeSformer', 'ViViT', 'ResNetNSTtransformer', 'ConvNeXtVanillaTransformer', 'VidNeXt']")
     parser.add_argument('-task', '--task_type', type=str, default='Collision Anticipation', help="Type of the Task: ['Time-to-collision', 'Collision Anticipation', 'Right of Way', ... ]")
     parser.add_argument('-vid_dir', '--video_dir', type=str, help="Path for the Video Directory")
-    parser.add_argument('-tr_csv', '--train_csv', type=str, help="CSV File Path for Training Labels")
-    parser.add_argument('-ts_csv', '--test_csv', type=str, help="CSV File Path for Testing Labels")
+    parser.add_argument('-csv_file', '--csv_file', type=str, help="CSV File Path for Dataset Labels")
 
     args = parser.parse_args()
 
@@ -62,14 +61,11 @@ if __name__ == "__main__":
         video_dir = args.video_dir
     else:
         print("VIDEO DIRECTORY IS MISSING")
-    if args.train_csv:
-        csv_path = args.train_csv
+    if args.csv_file:
+        csv_path = args.csv_file
     else:
-        print("FILE PATH FOR TRAINING LABELS IS NOT SET")
-    if args.test_csv:
-        test_csv_path = args.test_csv
-    else:
-        print("FILE PATH FOR TESTING LABELS IS NOT SET")
+        print("FILE PATH FOR DATASET LABELS IS NOT SET")
+
     # SET UP DATALOADER
     train_dataset = FetchData(csv_path, video_dir, task_name=task, set_name = 'train', segment_duration=segment_length, segment_interval=segment_interval, target_size=target_size, future_sight = 1, after_acc = True)
     train_collate_fn = TrainCollator(model_type=model_type, target_size=target_size)
@@ -84,7 +80,7 @@ if __name__ == "__main__":
         )   
     task_type = train_dataset.task_type
     num_classes = train_dataset.num_classes
-    test_dataset = FetchData(test_csv_path, video_dir, task_name=task, set_name = 'test', segment_duration= segment_length, segment_interval=segment_interval, target_size=target_size, future_sight = 1, after_acc = True)
+    test_dataset = FetchData(csv_path, video_dir, task_name=task, set_name = 'test', segment_duration= segment_length, segment_interval=segment_interval, target_size=target_size, future_sight = 1, after_acc = True)
     test_collate_fn = TestCollator(model_type=model_type, target_size=target_size)
     test_loader = DataLoader(
             dataset=test_dataset,

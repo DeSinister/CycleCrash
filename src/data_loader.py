@@ -37,12 +37,15 @@ class FetchData():
         if not length:
             if self.task in ['Time-to-collision', 'Collision Anticipation', 'Right of Way', 'Severity Score', 'Fault', 'Object Involved in Accident Direction']:
                 self.length_videos = 3000
+                self.df = self.df.sample(frac=1, random_state=42).reset_index(drop=True)
             else:
                 self.length_videos = 1000
             if self.set_name == 'train':
                 self.length_videos = int(0.7*self.length_videos)
+                self.df = self.df[:self.length_videos]
             elif self.set_name == 'test':
                 self.length_videos = int(0.3*self.length_videos)
+                self.df = self.df[self.length_videos:]
         self.length_videos = length
         if self.task_name == 'Time-to-collision':
             self.task_type = "reg"

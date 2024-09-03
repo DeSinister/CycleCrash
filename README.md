@@ -11,7 +11,7 @@ This paper has been accepted to WACV 2025
 </h3>
 
 <h3 align="center"> 
-<a href="#">[Paper]</a>   <!-- change with aaai link -->
+<a href="#">[Paper]</a>  
 <a href="#"> [Appendix]</a> 
 <a href="#"> [ArXiv]</a> 
 <a href="https://github.com/DeSinister/CycleCrash/"> [Website]</a>
@@ -21,36 +21,52 @@ This paper has been accepted to WACV 2025
 <p align="center"><img width="100%" src="assets/Graphical_abstract.png"/></p>
 
 ## Overview
-Self-driving research often underrepresents cyclist collisions and safety. To address this, we present CycleCrash, a novel dataset consisting of 3,000 dashcam videos with 436,347 frames that capture cyclists in a range of critical situations, from collisions to safe interactions. This dataset enables 9 different cyclist collision prediction and classification tasks focusing on potentially hazardous conditions for cyclists and is annotated with collision-related, cyclist-related, and scene-related labels. Next, we present
-VidNeXt, a novel method that uses a non-stationary transformer on the defined tasks within our dataset. To demonstrate the effectiveness of our method and create additional baselines on CycleCrash, we apply and compare 7 models along with a detailed ablation. 
+This repo contains the CycleCrash dataset and the code for our <a href="#">[WACV2025 paper]</a> on bicycle collision prediction and analysis. 
 
-Please refer to the `dataset.csv` file for detailed annotations and additional information about each video in the dataset.
+The dataset consists of 3,000 dashcam videos with 436,347 frames that capture cyclists in a range of critical situations, from collisions to safe interactions. This dataset enables 9 different cyclist collision prediction and classification tasks focusing on potentially hazardous conditions for cyclists and is annotated with collision-related, cyclist-related, and scene-related labels. Please refer to the `dataset.csv` file for detailed annotations and additional information about each video in the dataset.
+
+This code also contains PyTorch implementation for VidNeXt, a novel method that uses a non-stationary transformer on the defined tasks within our dataset, along with 7 baseline models. 
+
 
 ## Files
-- **dataset.csv**: CSV file containing the CycleCrash dataset.
-- **download.py**: Python script to download the videos of the dataset.
-- **preprocess.py**: Python script to Pre-process videos for background cropping and uniform temporal and spatial dimensions.
-- **data_loader.py**: Python script for implementing PyTorch-based Data loader for CycleCrash dataset
-- **get_model.py**: Python script to load the baseline models, the proposed VidNeXt and its ablation variants.
+- **<a href="https://github.com/DeSinister/CycleCrash/blob/main/dataset.csv">dataset.csv</a>**: CSV file containing the CycleCrash dataset.
+- **<a href="https://github.com/DeSinister/CycleCrash/blob/main/download/download_dataset.py">download_dataset.py</a>**: Python script to download the videos of the dataset.
+- **<a href="https://github.com/DeSinister/CycleCrash/blob/main/download/preprocess.py">preprocess.py</a>**: Python script to Pre-process videos for background cropping and uniform temporal and spatial dimensions.
+- **<a href="https://github.com/DeSinister/CycleCrash/blob/main/src/data_loader.py">data_loader.py</a>**: Python script for implementing PyTorch-based Data loader for CycleCrash dataset
+- **<a href="https://github.com/DeSinister/CycleCrash/blob/main/src/get_model.py">get_model.py</a>**: Python script to load the baseline models, the proposed VidNeXt and its ablation variants.
 
 ## Preparing the dataset
 
-1. **FFmpeg**:
+
+1. **Clone the Github repository**:
+   - Run the following command in a terminal to clone the GitHub repository in your current location.
+     ```
+     git clone https://github.com/DeSinister/CycleCrash.git
+     cd CycleCrash
+     ```
+     
+2. **Installing Packages**
+   - Run the following command to make sure the necessary packages are installed.
+   ```    
+   pip install -r requirements.txt
+   ```
+   
+3. **FFmpeg**:
    - Download the full build of FFmpeg from [FFmpeg Releases](https://ffmpeg.org/download.html).
    - Extract the downloaded ZIP file to a location on your system, e.g., `C:\ffmpeg-6.0-full_build`.
 
-2. **yt-dlp**:
+4. **yt-dlp**:
    - Download `yt-dlp` from the [yt-dlp GitHub repository](https://github.com/yt-dlp/yt-dlp#installation).
    - Place the `yt-dlp.exe` in the `bin` directory of the FFmpeg folder, e.g., `C:\ffmpeg-6.0-full_build\ffmpeg-6.0-full_build\bin`.
 
-3. **Downloading the dataset**
+5. **Downloading the dataset**
    - Set the paths for the dataset.csv, output folder, and folder path containing yt-dlp.exe in download_dataset.py.
    - Run the python file download.py to collect the videos.
    ```    
    python download/download_dataset.py
    ```
 
-4. **Preprocessing the videos**
+6. **Preprocessing the videos**
    - Set the paths for the dataset.csv, the directory where videos are stored, and the output directory in pre_process.py
    - Run the preprocess.py file.
    ```    

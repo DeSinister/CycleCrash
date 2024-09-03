@@ -40,10 +40,10 @@ This code also contains PyTorch implementation for VidNeXt, a novel method that 
 
 1. **Clone the Github repository**:
    - Run the following command in a terminal to clone the GitHub repository in your current location.
-     ```
-     git clone https://github.com/DeSinister/CycleCrash.git
-     cd CycleCrash
-     ```
+   ```
+   git clone https://github.com/DeSinister/CycleCrash.git
+   cd CycleCrash
+   ```
      
 2. **Installing Packages**
    - Run the following command to make sure the necessary packages are installed.

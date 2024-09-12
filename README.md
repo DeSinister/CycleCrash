@@ -30,10 +30,13 @@ This code also contains PyTorch implementation for VidNeXt, a novel method that 
 
 ## Files
 - **<a href="https://github.com/DeSinister/CycleCrash/blob/main/dataset.csv">dataset.csv</a>**: CSV file containing the CycleCrash dataset.
+- **<a href="https://github.com/DeSinister/CycleCrash/blob/main/download">src</a>**: This folder contains the source code for downloading and preparing the CycleCrash dataset.
 - **<a href="https://github.com/DeSinister/CycleCrash/blob/main/download/download_dataset.py">download_dataset.py</a>**: Python script to download the videos of the dataset.
 - **<a href="https://github.com/DeSinister/CycleCrash/blob/main/download/preprocess.py">preprocess.py</a>**: Python script to Pre-process videos for background cropping and uniform temporal and spatial dimensions.
+- **<a href="https://github.com/DeSinister/CycleCrash/blob/main/src">src</a>**: This folder contains the source code for executing the VidNeXt and baseline models on the tasks of CycleCrash dataset.
 - **<a href="https://github.com/DeSinister/CycleCrash/blob/main/src/data_loader.py">data_loader.py</a>**: Python script for implementing PyTorch-based Data loader for CycleCrash dataset
 - **<a href="https://github.com/DeSinister/CycleCrash/blob/main/src/get_model.py">get_model.py</a>**: Python script to load the baseline models, the proposed VidNeXt and its ablation variants.
+- **<a href="https://github.com/DeSinister/CycleCrash/blob/main/src/main.py">get_model.py</a>**: Python script to run the training and evaluation of the proposed VidNeXt and its ablation variants on CycleCrash dataset.
 
 ## Preparing the dataset
 

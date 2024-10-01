@@ -11,9 +11,9 @@ This paper has been accepted to WACV 2025
 </h3>
 
 <h3 align="center"> 
-<a href="#">[Paper]</a>  
-<a href="#"> [Appendix]</a> 
-<a href="#"> [ArXiv]</a> 
+<a href="https://arxiv.org/abs/2409.19942">[Paper]</a>  
+<a href="https://arxiv.org/abs/2409.19942"> [Appendix]</a> 
+<a href="https://arxiv.org/abs/2409.19942"> [ArXiv]</a> 
 <a href="https://github.com/DeSinister/CycleCrash/"> [Website]</a>
 </h3>
 
@@ -21,7 +21,7 @@ This paper has been accepted to WACV 2025
 <p align="center"><img width="100%" src="assets/Graphical_abstract.png"/></p>
 
 ## Overview
-This repo contains the CycleCrash dataset and the code for our <a href="#">[WACV2025 paper]</a> on bicycle collision prediction and analysis. 
+This repo contains the CycleCrash dataset and the code for our <a href="https://arxiv.org/abs/2409.19942">[WACV2025 paper]</a> on bicycle collision prediction and analysis. 
 
 The dataset consists of 3,000 dashcam videos with 436,347 frames that capture cyclists in a range of critical situations, from collisions to safe interactions. This dataset enables 9 different cyclist collision prediction and classification tasks focusing on potentially hazardous conditions for cyclists and is annotated with collision-related, cyclist-related, and scene-related labels. Please refer to the `dataset.csv` file for detailed annotations and additional information about each video in the dataset.
 
